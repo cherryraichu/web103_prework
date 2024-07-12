@@ -25,9 +25,14 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  place-items: center;  
+  align-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+  color:white;
+  background-color: #012129;
+
 }
 
 h1 {
@@ -63,6 +68,43 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    /*background-color: #f9f9f9;*/
+      background-color: #aebbba;
+      color:white;
   }
 }
+
+#navButtons {
+  /*Horizontal button layout*/
+  display: flex;
+  flex-direction: horizontal;
+  gap: 2vw;
+
+  /*Center the buttons*/
+  place-items: center;  
+  align-items: center;
+  justify-content: center;
+
+  
+}
+#navbar {
+  /*Background Image*/
+  /*background-image: url('./assets/yogabackground.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;*/
+  background-color: #395E53;  
+
+  /*Fix the navbar to the top*/
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /*Center the elements*/
+  text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+
+}
+
