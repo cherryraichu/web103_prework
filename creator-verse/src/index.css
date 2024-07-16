@@ -108,3 +108,47 @@ button:focus-visible {
 
 }
 
+
+.CreatorCard {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  
+  background-color: #aebbba;
+  
+
+  text-align: center;
+
+}
+.card-header-name {
+  display: flex;
+  flex-direction: row;
+  
+  place-items: center;  
+  align-items: center;
+  justify-content: center;
+}
+
+#CreatorCardsRow {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+
+}
+
+#CreatorCardsContainer {
+  display: flex;
+  flex-direction: column;
+  width:80vw;
+  padding-top: 55vh;
+
+
+  place-items: center;  
+  align-items: center;
+  justify-content: center;
+
+  gap:2vh;
+
+}
+
