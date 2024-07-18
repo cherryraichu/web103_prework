@@ -2,6 +2,8 @@ import {useEffect,useState} from 'react';
 
 import CreatorCard from '../components/creatorCard';
 import {supabase} from '../client';
+import {Link} from "react-router-dom";
+
 
 const ShowCreators = () => {
     const [creatorsLst, setCreatorsLst] = useState([]);
@@ -25,8 +27,8 @@ const ShowCreators = () => {
             <div id="navbar">
                 <h1>Creatorverse - Health and Fitness</h1>
                 <div id="navButtons">
-                    <button><h2>View All Creators</h2></button>
-                    <button><h2>Add a Creator</h2></button>
+                    <button><Link to={`/`}><h2>View All Creators</h2></Link></button>
+                    <button><Link to={`AddCreator`}><h2>Add a Creator</h2></Link></button>
                 </div>
             </div>
 

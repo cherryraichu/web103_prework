@@ -15,7 +15,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #012129;
   text-decoration: inherit;
 }
 a:hover {
@@ -52,7 +52,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #ffffff;
 }
 button:focus,
 button:focus-visible {
@@ -65,10 +65,9 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #ffffff;
   }
   button {
-    /*background-color: #f9f9f9;*/
       background-color: #aebbba;
       color:white;
   }
@@ -88,11 +87,7 @@ button:focus-visible {
   
 }
 #navbar {
-  /*Background Image*/
-  /*background-image: url('./assets/yogabackground.jpg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;*/
+  /*Background*/
   background-color: #395E53;  
 
   /*Fix the navbar to the top*/
@@ -137,12 +132,12 @@ button:focus-visible {
 
 }
 
-#CreatorCardsContainer {
+#AddEditCreatorContainer, #CreatorCardsContainer {
   display: flex;
   flex-direction: column;
   width:80vw;
   padding-top: 55vh;
-
+  padding-bottom: 10vh;
 
   place-items: center;  
   align-items: center;
@@ -150,5 +145,14 @@ button:focus-visible {
 
   gap:2vh;
 
+
 }
 
+#AddEditSubmitBtn, input,textarea {
+  width:50vw;
+  height: 10vh;
+}
+
+.labelDescription {
+  font-weight: normal;
+}
