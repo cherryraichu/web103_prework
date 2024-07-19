@@ -1,17 +1,10 @@
 import {Link} from "react-router-dom";
-
+import Navbar from "../components/navbar";
 
 const EditCreator = () => {
     return(
         <>
-        {/*Nav Bar*/}
-        <div id="navbar">
-            <h1>Creatorverse - Health and Fitness</h1>
-            <div id="navButtons">
-                <button><Link to={`/`}><h2>View All Creators</h2></Link></button>
-                <button><Link to={`AddCreator`}><h2>Add a Creator</h2></Link></button>
-            </div>
-        </div>
+        <Navbar/>
         <h1>Edit Creators Page</h1>
         
         

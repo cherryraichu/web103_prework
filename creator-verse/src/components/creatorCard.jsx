@@ -1,7 +1,8 @@
-import React from 'react';
 import externalLinkIcon from "../assets/external-link-icon.png"
 import editIcon from "../assets/edit-pen-icon.png"
 import propTypes from "prop-types";
+
+import {Link} from "react-router-dom";
 
 const CreatorCard = (props) => {
     const iconStyle = {
@@ -18,7 +19,7 @@ const CreatorCard = (props) => {
                 <div className="card-header-name">
                     <h3>{props.creatorName}</h3> 
                     <button>
-                        <img style={iconStyle} src={editIcon} alt="Edit Creator"/>
+                        <Link to={'/EditCreator/'+props.creatorId}><img style={iconStyle} src={editIcon} alt="Edit Creator"/></Link>  
                     </button>
                     <button>
                         <a href={props.creatorUrl} target="_blank" rel="noopener noreferrer">
@@ -40,7 +41,8 @@ CreatorCard.propTypes = {
     creatorName: propTypes.string,
     creatorUrl: propTypes.string,
     creatorDescription: propTypes.string,
-    creatorImgUrl: propTypes.string
+    creatorImgUrl: propTypes.string,
+    creatorId: propTypes.number
 }
 
 export default CreatorCard;

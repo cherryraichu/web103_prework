@@ -1,6 +1,8 @@
 import {useEffect,useState} from 'react';
 
 import CreatorCard from '../components/creatorCard';
+import Navbar  from '../components/navbar';
+
 import {supabase} from '../client';
 import {Link} from "react-router-dom";
 
@@ -23,21 +25,14 @@ const ShowCreators = () => {
 
     return(
         <>
-            {/*Nav Bar*/}
-            <div id="navbar">
-                <h1>Creatorverse - Health and Fitness</h1>
-                <div id="navButtons">
-                    <button><Link to={`/`}><h2>View All Creators</h2></Link></button>
-                    <button><Link to={`AddCreator`}><h2>Add a Creator</h2></Link></button>
-                </div>
-            </div>
-
+            <Navbar/>
             {/* WIP - Container for all Creator Cards*/}
             <div id="CreatorCardsContainer">
                 {creatorsLst.length > 0? 
                     creatorsLst.map((currCreator)=>{
                     return <CreatorCard creatorName={currCreator.name}
-                    creatorUrl={currCreator.url} creatorDescription={currCreator.description} creatorImgUrl={currCreator.image_url}/>;
+                    creatorUrl={currCreator.url} creatorDescription={currCreator.description} creatorImgUrl={currCreator.image_url}
+                    creatorId={currCreator.id}/>;
                 }) 
                 : <p>No Creators Yet</p>}
 

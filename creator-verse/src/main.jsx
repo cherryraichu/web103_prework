@@ -17,8 +17,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route index={true} path="/" element={<ShowCreators/>}/>
         <Route index={false} path="AddCreator" element={<AddCreator/>}/>
-        <Route index={false} path="EditCreator" element={<EditCreator/>}/>
-        <Route index={false} path="ViewCreator" element={<ViewCreator/>}/>
+        <Route index={false} path="EditCreator/:id" element={<EditCreator/>}/>
+        <Route index={false} path="ViewCreator/:id" element={<ViewCreator/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
