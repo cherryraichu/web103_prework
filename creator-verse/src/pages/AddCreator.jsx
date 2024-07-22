@@ -27,6 +27,9 @@ const AddCreator = () => {
         if (error) {
             console.log('error',error);
         }
+        else {
+            window.alert("Changes were successful");
+        }
     }
 
     return(

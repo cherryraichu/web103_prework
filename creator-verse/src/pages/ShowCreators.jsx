@@ -4,7 +4,6 @@ import CreatorCard from '../components/creatorCard';
 import Navbar  from '../components/navbar';
 
 import {supabase} from '../client';
-import {Link} from "react-router-dom";
 
 
 const ShowCreators = () => {
