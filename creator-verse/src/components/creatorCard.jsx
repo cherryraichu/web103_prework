@@ -1,5 +1,6 @@
 import externalLinkIcon from "../assets/external-link-icon.png"
 import editIcon from "../assets/edit-pen-icon.png"
+import moreInfoIcon from "../assets/more-info-icon.png"
 import propTypes from "prop-types";
 
 import {Link} from "react-router-dom";
@@ -18,6 +19,9 @@ const CreatorCard = (props) => {
             <article>
                 <div className="card-header-name">
                     <h3>{props.creatorName}</h3> 
+                    <button>
+                        <Link to={'/ViewCreator/'+props.creatorId}><img style={iconStyle} src={moreInfoIcon} alt="Edit Creator"/></Link>  
+                    </button>
                     <button>
                         <Link to={'/EditCreator/'+props.creatorId}><img style={iconStyle} src={editIcon} alt="Edit Creator"/></Link>  
                     </button>
