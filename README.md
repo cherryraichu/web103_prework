@@ -2,7 +2,7 @@
 
 Submitted by: **👉🏿 Annie Zhou**
 
-About this web app: **👉🏿 app description here**
+About this web app: **👉🏿 Allows the user to browse, edit, add, and delete through a variety of health and fitness creators**
 
 Time spent: **👉🏿 12-16** hours
 
@@ -35,7 +35,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-👉🏿<img src='demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  👉🏿 GIF tool here
