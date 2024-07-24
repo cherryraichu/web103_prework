@@ -25,7 +25,7 @@ const ShowCreators = () => {
     return(
         <>
             <Navbar/>
-            {/* WIP - Container for all Creator Cards*/}
+            {/* Container for all Creator Cards*/}
             <div id="CreatorCardsContainer">
                 {creatorsLst.length > 0? 
                     creatorsLst.map((currCreator)=>{

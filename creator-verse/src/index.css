@@ -137,7 +137,7 @@ button:focus-visible {
 
 }
 
-#AddEditCreatorContainer, #CreatorCardsContainer {
+#AddEditCreatorContainer{
   display: flex;
   flex-direction: column;
   width:80vw;
@@ -150,8 +150,31 @@ button:focus-visible {
 
   gap:2vh;
 
+}
+
+
+#CreatorCardsContainer {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;  
+  padding-top: 55vh;
+  padding-bottom: 10vh;
+
+  place-items: center;  
+  align-items: center;
+  justify-content: space-between;
+
+  gap:2vh;
 
 }
+.CreatorCard {
+  position: relative;
+  width: 20vw;
+  height: 20vw;
+
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
 
 #AddEditSubmitBtn, input,textarea {
   width:50vw;
