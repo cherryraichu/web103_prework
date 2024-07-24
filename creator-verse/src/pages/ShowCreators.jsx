@@ -15,6 +15,7 @@ const ShowCreators = () => {
         }
         else {
             setCreatorsLst(data);
+            
         } 
     }
     
@@ -29,8 +30,9 @@ const ShowCreators = () => {
             <div id="CreatorCardsContainer">
                 {creatorsLst.length > 0? 
                     creatorsLst.map((currCreator)=>{
+                    
                     return <CreatorCard creatorName={currCreator.name}
-                    creatorUrl={currCreator.url} creatorDescription={currCreator.description} creatorImgUrl={currCreator.image_url}
+                    creatorUrl={currCreator.socialMedia} creatorDescription={currCreator.description} creatorImgUrl={currCreator.image_url}
                     creatorId={currCreator.id}/>;
                 }) 
                 : <p>No Creators Yet</p>}
